@@ -1,0 +1,17 @@
+
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+<h1>Add New Page</h1>
+<form action="{% url 'saveedit' %}">
+    <input type="text" name="text1" placeholder="Enter the title" class="inp">
+    <textarea class="inp" name="textchanged" rows="30" cols="100" >{{ text }} </textarea>
+    <input type="submit">
+</form>
+    
+
+{% endblock %}

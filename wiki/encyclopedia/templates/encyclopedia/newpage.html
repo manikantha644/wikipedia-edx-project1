@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+<h1>Add New Page</h1>
+<form action="savenewpage">
+    <input type="text" placeholder="Enter page Title"  name = "title" size="40"><br>
+    <input type="text" placeholder="Enter page content" name="content" size="80"><br>
+    <input type="submit">
+</form>
+    
+
+{% endblock %}
